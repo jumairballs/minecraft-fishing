@@ -23,6 +23,7 @@ function selectvill(){
     vi.classList.add("active")
     ai.classList.remove("active");
     si.classList.remove("active");
+    character = "vill"
 }
 
 function selectSteve (){
@@ -40,6 +41,7 @@ character = "alex";
 }
 
 function fishOnce(){ 
+
 if (character==="steve"){
  let rand = Math.random();
 if (rand < 0.71){
@@ -61,7 +63,7 @@ if (rand < 0.71){
 }
 
 
-} else if(character === "selectvill"){
+} else if (character === "vill"){
     let rand = Math.random();
     if (rand < 0.3){
         numc++;
@@ -80,6 +82,8 @@ if (rand < 0.71){
         npuf.innerHTML = nump;
        imgr.src = "img/Pufferfish.png";
     }
+
+
 } else {
     let rand = Math.random();
  if (rand < 0.11){
