@@ -59,9 +59,7 @@ if (rand < 0.71){
     npuf.innerHTML = nump;
    imgr.src = "img/Pufferfish.png";
 }
-
-
-} else if(character === "selectvill"){
+} else if (character === "selectvill"){
     let rand = Math.random();
     if (rand < 0.3){
         numc++;
