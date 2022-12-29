@@ -7,6 +7,8 @@ let ncod = document.getElementById("nc");
 let nsal = document.getElementById("ns");
 let npuf = document.getElementById("np");
 let ntro = document.getElementById("nt");
+document.getElementById("5btn").addEventListener("click", fclick)
+document.getElementById("200btn").addEventListener("click", tclick)
 
 let character = "steve";
 let numc = 0;
@@ -61,13 +63,9 @@ if (rand < 0.71){
     npuf.innerHTML = nump;
    imgr.src = "img/Pufferfish.png";
 }
-<<<<<<< HEAD
-} else if (character === "selectvill"){
-=======
 
 
 } else if (character === "vill"){
->>>>>>> 29f7efdce876b361f19c1ca3e558bd578bcd5ebb
     let rand = Math.random();
     if (rand < 0.3){
         numc++;
@@ -109,4 +107,19 @@ imgr.src = "img/Pufferfish.png";
  }
     
 }
+}
+
+function fclick(){
+    for(let n = 1; n<=5; n++){
+        fishOnce();
+    }
+}
+
+function tclick(){
+ let codt = numc + 200;
+ let co = 0;
+ while(numc<codt){
+    fishOnce();
+    co++;
+ }
 }
